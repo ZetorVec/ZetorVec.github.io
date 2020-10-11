@@ -7,9 +7,8 @@
     font-family: 'Oswald';
 }
 .header {
+    display: block;
     width: 100%;
-    
-
 }
 nav li {
     display: inline-block;
@@ -61,9 +60,19 @@ nav a {
 .cardholder {
     width: 400px;
     height: 400px;
-    background-color: blue;
+    background-color: #aaaaaa;
     margin: 100px auto;
     position: relative;
+}
+.cardholder::after {
+    content: "";
+    position: absolute;
+    left: 400px;
+    width: 0;
+    height: 380px;
+    border-left: 5px solid #444444;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
 }
 .card {
     top: 0;
@@ -72,27 +81,30 @@ nav a {
     right: 0;
     height: 100%;
     margin: 0;
-    position:absolute;
-    transition: all 1s ease-out ;
-    
+    position: absolute;
+    z-index: 0;
+    transition: transform .5s ease;
+}
+.card[data-id='0'] {
+    background: url("../images/slide0.jpg");
 }
 .card[data-id='1'] {
-    background-color: green;
-    z-index: 1;
+    background: url("../images/slide1.jpg");
 }
 .card[data-id='2'] {
-    background-color: yellow;
-    z-index: 2;
+    background: url("../images/slide2.jpg");
 }
 .card[data-id='3'] {
-    background-color: red;
-    z-index: 3;
+    background: url("../images/slide3.jpg");
 }
 .card[data-id='4'] {
-    background-color: purple;
-    z-index: 4;
+    background: url("../images/slide4.jpg");
 }
-.card[data-id='5'] {
-    background-color: orange;
-    z-index: 5;
+.card-title{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 36px;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 168px;
 }
