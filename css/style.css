@@ -6,3 +6,93 @@
     padding: 0;
     font-family: 'Oswald';
 }
+.header {
+    width: 100%;
+    
+
+}
+nav li {
+    display: inline-block;
+    font-size:36px;
+    
+   
+}
+nav {
+    width: 100%;
+    background-color: rgb(163, 120, 64);
+}
+nav ul {
+    width: fit-content;
+    margin: auto;
+
+}
+.submenu {
+    position: absolute;
+    top: 63px;
+    display: none;
+    background-color:rgb(163, 120, 64);
+    margin:0;
+
+    
+}
+nav a:hover+.submenu {
+    display: block;
+    
+}
+.submenu:hover {
+    display:block;
+    
+}
+nav li:hover {
+    background-color:rgb(163, 120, 64);
+    
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    padding:5px 50px;
+    color: white;
+}
+
+.slider {
+    position: relative;
+}
+
+.cardholder {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    margin: 100px auto;
+    position: relative;
+}
+.card {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    margin: 0;
+    position:absolute;
+    transition: all 1s ease-out ;
+    
+}
+.card[data-id='1'] {
+    background-color: green;
+    z-index: 1;
+}
+.card[data-id='2'] {
+    background-color: yellow;
+    z-index: 2;
+}
+.card[data-id='3'] {
+    background-color: red;
+    z-index: 3;
+}
+.card[data-id='4'] {
+    background-color: purple;
+    z-index: 4;
+}
+.card[data-id='5'] {
+    background-color: orange;
+    z-index: 5;
+}
