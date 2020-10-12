@@ -7,8 +7,10 @@
     font-family: 'Oswald';
 }
 .header {
-    display: block;
     width: 100%;
+    display:block;
+    
+
 }
 nav li {
     display: inline-block;
@@ -31,11 +33,13 @@ nav ul {
     display: none;
     background-color:rgb(163, 120, 64);
     margin:0;
+    z-index: 3;
 
     
 }
 nav a:hover+.submenu {
     display: block;
+
     
 }
 .submenu:hover {
@@ -43,7 +47,8 @@ nav a:hover+.submenu {
     
 }
 nav li:hover {
-    background-color:rgb(163, 120, 64);
+    background-color:rgb(136, 85, 19);
+    text-align: center;
     
 }
 nav a {
@@ -51,13 +56,23 @@ nav a {
     text-decoration: none;
     padding:5px 50px;
     color: white;
+    text-transform: uppercase;
+    
+    
 }
 
 .slider {
     position: relative;
 }
-
-.cardholder {
+.photo {
+    display:block;
+    padding:5px 59px;
+}
+.video {
+    display:line;
+    padding:5px 51px;
+}
+/*.cardholder {
     width: 400px;
     height: 400px;
     background-color: #aaaaaa;
@@ -107,4 +122,29 @@ nav a {
     text-align: center;
     padding: 5px 0;
     margin-top: 168px;
+}*/
+.content {font-size: 0;
+    width:1350px;
+    margin: 150px auto 50px;
+}
+.photocard {
+    background: linear-gradient(to top left, #33ccff 0%, #cc6600 100%);
+    width: 400px;
+    margin-bottom:50px;
+      padding:50px 50px 50px;
+      display:inline-block;
+      margin-right: 50px;
+      box-shadow:4px 4px 5px rgb(85, 82, 82);
+
+    }
+    .card-title {
+    padding-top:12px;
+    font-size: 36px;
+    font-weight:350;
+    margin-bottom:-25px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+a {
+    text-decoration: none;
 }
